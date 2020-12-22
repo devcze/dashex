@@ -1,0 +1,1 @@
+cd ~/dashcore-0.13.1/bin && ./dashd -daemon -reindex &

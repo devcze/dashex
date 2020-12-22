@@ -1,0 +1,214 @@
+/*-----------------------------------------------------*/
+/* GLOBAL COLORS */
+/*-----------------------------------------------------*/
+
+$page-background: slategray;
+$container-background: white;
+$blocks-hover-highlight: #18a5b7ff;
+$dash-color: #2891e4ff;
+$conf-few: red;
+$conf-lot: $dash-color;
+
+
+$dash-gradient1: #1451a2ff;
+$dash-gradient2: #1691e1ff;
+
+$primary-color: #2891e4ff;
+$dash-light: white;
+$secondary-color: lightgray;
+$background-color: slategray;
+$text-color: black;
+
+
+// Theme general
+$border-radius : 15px;
+$text-font-size: 0.95em;
+$button-font-size: 0.9em;
+
+/*-----------------------------------------------------*/
+/* CUSTOM styles BEGIN
+/*-----------------------------------------------------*/
+body,html {
+  max-width: 100%;
+  word-break: break-all;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: $text-font-size;
+}
+
+.btn {
+  font-size: $button-font-size;
+}
+
+.btn-custom {
+  background-color: $primary-color;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.btn-info {
+  min-width: 70%;
+  max-width: 100%;
+}
+
+.my-container {
+  background-color: $container-background;
+  padding: 40px;
+  border-radius: $border-radius
+}
+
+.footer {
+  background-color: $container-background;
+  padding: 20px;
+  border-radius: $border-radius;
+  font-size: 0.8em;
+}
+
+.header {
+  background-color: $container-background;
+  padding: 20px;
+  border-radius: $border-radius;
+}
+
+.search {
+  width: 100%
+
+}
+
+.bottom-line {
+  //border-bottom: 1px solid #DDDDDD;
+  padding-top: 10px;
+}
+
+.row {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+
+.btn-dash {
+  background-color: $primary-color; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+
+.btn-conf-few {
+  background-color: $conf-few;
+  color: white;
+}
+
+
+.btn-conf-lot {
+  background-color: $conf-lot;
+  color: white;
+}
+
+.btn-tx {
+  min-width: 70%;
+  max-width: 100%;
+}
+
+
+btn-dash:hover {
+  /*formatting goes here*/
+  color: white; /* White text */
+}
+
+btn-dash:hover {
+  /*formatting goes here*/
+  color: white; /* White text */
+}
+
+
+btn-success:focus {
+  /*formatting goes here*/
+  color: white; /* White text */
+}
+
+.btn:hover {
+  color: white;
+}
+
+.btn-line {
+  min-width: 100%;
+  width: 100%;
+}
+
+
+
+
+.line {
+  padding-bottom: 10px;
+}
+.line:hover {
+  /*formatting goes here*/
+  //background-image: linear-gradient(#1451a2ff, #1691e1ff);
+  background-color: $dash-gradient1;
+  color: white !important;; /* White text */
+  animation-name: color;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+
+
+
+@keyframes color {
+  0% {
+    background-color: $dash-gradient1;
+  }
+  50% {
+    background-color: $dash-gradient2;
+  }
+  100% {
+    background-color: $dash-gradient1;
+  }
+}
+
+btn-success:focus {
+  /*formatting goes here*/
+  color: white; /* White text */
+}
+
+.btn:hover {
+  color: white;
+}
+
+
+.object {
+  background-color: $dash-light;
+}
+
+
+.my-a:hover .dash-text {
+  color: white;
+  text-decoration: none;
+}
+
+
+.btn-dash:hover, .btn-dash:focus, .btn-dash:active, .btn-dash.active, .open>.dropdown-toggle.btn-dash,
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary,
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open>.dropdown-toggle.btn-warning,
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open>.dropdown-toggle.btn-success,
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open>.dropdown-toggle.btn-info
+{
+  background-color: $dash-gradient1;
+  animation-name: color;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  border-color: $dash-gradient1;
+}
+
+
+.dash-text {
+  color: $blocks-hover-highlight;
+  text-decoration: none;
+}
+
+a, a:hover {
+  color: $text-color;
+  text-decoration: none;
+}
+

@@ -1,0 +1,1 @@
+nohup ./all-start.sh &
